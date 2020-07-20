@@ -21,7 +21,7 @@ Currently includes:
 
 ## Quick Start
 
-The Ignite Bowser boilerplate project's structure will look similar to this:
+The project's structure will look similar to this:
 
 ```
 bd60217cb9f1b68c26ca
