@@ -102,10 +102,10 @@ class PostScreen extends React.Component {
 				<View style={styles.container}>
 					<View style={styles.horizontalSpace}>
 						<FlatList
-							scrollEventThrottle={0.5}
 							showsVerticalScrollIndicator={false}
-							data={postList}
-							onEndReachedThreshold={() => {this.getPosts()}}
+              data={postList}
+							onEndReachedThreshold={0.5}
+							onEndReached={() => {this.getPosts()}}
 							renderItem={this.renderItem}
 							keyExtractor={(item, index) => item+"_"+index}
 							ListEmptyComponent={<Text style={styles.textStyle}>{postLoader ? 'Loading posts..' : 'No posts found.'}</Text>}
